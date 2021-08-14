@@ -1,29 +1,45 @@
+@-moz-document domain("twitter.com") {
+/*
+* change the rgb value of --accent-color to adapt the
+* accent to different Twitter themes
+* default: 29, 161, 242
+* yellow: 255, 173, 31
+* pink: 224, 36, 94
+* purple: 121, 75, 196
+* orange: 244, 93, 34
+* green: 23, 191, 99
+*/
+:root {
+    --accent-color: rgb(29, 161, 242);
+}
+}
+
 @-moz-document url-prefix("https://twitter.com/home") {
-	a[aria-label="Home"][href="/home"] div div {
-		color: rgb(29, 161, 224) !important;
-	}
+a[aria-label="Home"][href="/home"] div div {
+    color: var(--accent-color) !important;
+}
 }
 
 @-moz-document url-prefix("https://twitter.com/notifications") {
-	a[aria-label="Notifications"][href="/notifications"] div div {
-		color: rgb(29, 161, 224) !important;
-	}
+a[aria-label="Notifications"][href="/notifications"] div div {
+    color: var(--accent-color) !important;
+}
 }
 
 @-moz-document url-prefix("https://twitter.com/explore") {
-	a[aria-label="Search and explore"][href="/explore"] div div {
-		color: rgb(29, 161, 224) !important;
-	}
+a[aria-label="Search and explore"][href="/explore"] div div {
+    color: var(--accent-color) !important;
+}
 }
 
 @-moz-document url-prefix("https://twitter.com/messages") {
-	a[aria-label="Direct Messages"][href="/messages"] div div {
-		color: rgb(29, 161, 224) !important;
-	}
+a[aria-label="Direct Messages"][href="/messages"] div div {
+    color: var(--accent-color) !important;
+}
 }
 
 @-moz-document url-prefix("https://twitter.com/i/bookmarks") {
-	a[aria-label="Bookmarks"][href="/i/bookmarks"] div div {
-		color: rgb(29, 161, 224) !important;
-	}
+a[aria-label="Bookmarks"][href="/i/bookmarks"] div div {
+    color: var(--accent-color) !important;
+}
 }

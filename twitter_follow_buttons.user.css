@@ -1,0 +1,79 @@
+/*
+* Twitter Follow/Unfollow buttons
+* revert to old style via custom CSS
+* Author: mxamber
+* Website: https://github.com/mxamber
+* Version: 1.2
+* Date: 2021-08-11
+* Updated: 2021-08-12
+*/
+
+
+/*
+* change the rgb value of --accent-color to adapt the
+* accent to different Twitter themes
+* default: 29, 161, 242
+* yellow: 255, 173, 31
+* pink: 224, 36, 94
+* purple: 121, 75, 196
+* orange: 244, 93, 34
+* green: 23, 191, 99
+*/
+:root {
+    --accent-color: rgb(29, 161, 242);
+}
+
+
+/*
+* button when following: blue background
+* button when following: white font
+* button when about to unfollow: red background
+*/
+div[aria-label*="Following"][role="button"] {
+    background: var(--accent-color);
+    
+}
+div[aria-label*="Following"][role="button"] > div > span > span {
+    color: white;
+}
+
+div[aria-label*="Following"][role="button"]:hover {
+    background: rgb(220,30,41);
+}
+
+
+/*
+* button before following: white background
+* button before following: blue font
+* button when hovering: blue background
+* button when hovering: white font
+*/
+div[aria-label*="Follow "][role="button"] {
+    background: rgba(0,0,0,0) !important;
+    border: 1px solid var(--accent-color);
+}
+div[aria-label*="Follow "][role="button"] > div > span > span {
+    color: var(--accent-color);
+}
+
+div[aria-label*="Follow "][role="button"]:hover {
+    background: var(--accent-color) !important;
+}
+
+div[aria-label*="Follow "][role="button"]:hover > div > span > span {
+    color: white;
+}
+
+
+
+/*
+* ---- CHANGELOG ----
+*
+* 1.1 (2021-08-12)
+* refined selectors (more specific, added role=button) to avoid
+* colouring the entire Followers/Following page of a user profile
+* 
+* 1.2 (2021-08-12)
+* replaced blue with global property --accent-color
+* edit value to change theme accent color of buttons
+*/

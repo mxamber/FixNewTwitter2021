@@ -1,0 +1,29 @@
+@-moz-document url-prefix("https://twitter.com/home") {
+	a[aria-label="Home"][href="/home"] div div {
+		color: rgb(29, 161, 224) !important;
+	}
+}
+
+@-moz-document url-prefix("https://twitter.com/notifications") {
+	a[aria-label="Notifications"][href="/notifications"] div div {
+		color: rgb(29, 161, 224) !important;
+	}
+}
+
+@-moz-document url-prefix("https://twitter.com/explore") {
+	a[aria-label="Search and explore"][href="/explore"] div div {
+		color: rgb(29, 161, 224) !important;
+	}
+}
+
+@-moz-document url-prefix("https://twitter.com/messages") {
+	a[aria-label="Direct Messages"][href="/messages"] div div {
+		color: rgb(29, 161, 224) !important;
+	}
+}
+
+@-moz-document url-prefix("https://twitter.com/i/bookmarks") {
+	a[aria-label="Bookmarks"][href="/i/bookmarks"] div div {
+		color: rgb(29, 161, 224) !important;
+	}
+}

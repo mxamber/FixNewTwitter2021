@@ -1,0 +1,6 @@
+div[style*='clip-path: url("#hex'] > a {
+    border: 6px solid red;
+    padding: 5px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
